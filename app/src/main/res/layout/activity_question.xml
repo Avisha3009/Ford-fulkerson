@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#072749"
+    tools:context=".QUESTION">
+
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="322dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Enter the number of edges"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1CA9C1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nc" />
+
+    <EditText
+        android:id="@+id/nc"
+        android:layout_width="241dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/O4" />
+
+    <Button
+        android:id="@+id/O4"
+        android:layout_width="322dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Enter the number of cities"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1CA9C1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nf"
+        android:layout_width="245dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+
+
+        android:id="@+id/find"
+        android:layout_width="231dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="76dp"
+        android:gravity="center"
+        android:text="next"
+        android:textColor="#272343"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1CC1A8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="210dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#1CA9C1"
+        android:text="Enter source:"
+        android:textColor="@color/black"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nf" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="210dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1CA9C1"
+        android:text="Enter sink:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <EditText
+        android:id="@+id/start"
+        android:layout_width="113dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/nf"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/end"
+        android:layout_width="113dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/start" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
